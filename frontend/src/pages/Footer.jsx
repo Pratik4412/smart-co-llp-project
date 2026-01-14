@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import ca_logo from "../assets/ca-logo.svg";
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -114,7 +114,8 @@ const Footer = () => {
                 Stay Updated with Financial Insights
               </h3>
               <p className="text-white/90 font-para">
-                Subscribe to our newsletter for tax tips, compliance updates & business advice
+                Subscribe to our newsletter for tax tips, compliance updates &
+                business advice
               </p>
             </div>
             <form
@@ -159,67 +160,70 @@ const Footer = () => {
                 </h2>
               </Link>
               <p className="text-gray-400 mb-6 leading-relaxed font-para">
-                A premier Chartered Accountancy firm with 20+ years of excellence in audit, taxation, and financial advisory services. Trusted by 500+ businesses across India.
+                A premier Chartered Accountancy firm with 20+ years of
+                excellence in audit, taxation, and financial advisory services.
+                Trusted by 500+ businesses across India.
               </p>
 
               {/* Certifications */}
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center gap-3">
-                  <svg
-                    className="w-5 h-5 text-primary-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                  <span className="text-sm text-gray-400 font-para">
-                    ICAI Registered - FRN 126763W
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <svg
-                    className="w-5 h-5 text-primary-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                  <span className="text-sm text-gray-400 font-para">
-                    ISO Certified Firm
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <svg
-                    className="w-5 h-5 text-primary-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                  <span className="text-sm text-gray-400 font-para">
-                    Peer Reviewed
-                  </span>
+              <div className="flex items-start gap-2">
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center gap-3">
+                    <svg
+                      className="w-5 h-5 text-primary-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      />
+                    </svg>
+                    <span className="text-sm text-gray-400 font-para">
+                      ICAI Registered - FRN 126763W
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <svg
+                      className="w-5 h-5 text-primary-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      />
+                    </svg>
+                    <span className="text-sm text-gray-400 font-para">
+                      ISO Certified Firm
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <svg
+                      className="w-5 h-5 text-primary-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      />
+                    </svg>
+                    <span className="text-sm text-gray-400 font-para">
+                      Peer Reviewed
+                    </span>
+                  </div>
                 </div>
               </div>
-
               {/* Social Links */}
               <div className="flex gap-3">
                 {socialLinks.map((social, index) => (
@@ -239,7 +243,9 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-bold mb-6 font-heading">Quick Links</h3>
+              <h3 className="text-lg font-bold mb-6 font-heading">
+                Quick Links
+              </h3>
               <ul className="space-y-3">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
@@ -269,7 +275,9 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h3 className="text-lg font-bold mb-6 font-heading">Our Services</h3>
+              <h3 className="text-lg font-bold mb-6 font-heading">
+                Our Services
+              </h3>
               <ul className="space-y-3">
                 {services.map((service, index) => (
                   <li key={index}>
@@ -299,7 +307,9 @@ const Footer = () => {
 
             {/* Contact Info */}
             <div>
-              <h3 className="text-lg font-bold mb-6 font-heading">Contact Us</h3>
+              <h3 className="text-lg font-bold mb-6 font-heading">
+                Contact Us
+              </h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <svg
@@ -355,7 +365,7 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
+                {/* <div className="flex items-start gap-3">
                   <svg
                     className="w-5 h-5 text-primary-500 flex-shrink-0 mt-1"
                     fill="none"
@@ -373,6 +383,13 @@ const Footer = () => {
                     <p>Monday - Saturday</p>
                     <p>9:00 AM - 6:00 PM IST</p>
                   </div>
+                </div> */}
+                <div>
+                  <img
+                    src={ca_logo}
+                    alt="CA Certification"
+                    className="w-24 h-24"
+                  />
                 </div>
               </div>
             </div>
@@ -414,7 +431,9 @@ const Footer = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-lg font-bold font-heading">{office.city}</h4>
+                  <h4 className="text-lg font-bold font-heading">
+                    {office.city}
+                  </h4>
                 </div>
                 <p className="text-gray-400 text-sm mb-3 font-para">
                   {office.address}
@@ -437,8 +456,9 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <div className="text-gray-400 text-sm text-center md:text-left font-para">
-              © {new Date().getFullYear()} S M A R T S & Co. All rights reserved. | Designed with{" "}
-              <span className="text-red-500">♥</span> in India
+              © {new Date().getFullYear()} S M A R T S & Co. All rights
+              reserved. | Designed with <span className="text-red-500">♥</span>{" "}
+              in India
             </div>
 
             {/* Legal Links */}
