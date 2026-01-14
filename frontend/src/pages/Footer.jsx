@@ -384,7 +384,7 @@ const Footer = () => {
                     <p>9:00 AM - 6:00 PM IST</p>
                   </div>
                 </div> */}
-                <div>
+                <div className="bg-primary-50 p-1 rounded-md w-fit">
                   <img
                     src={ca_logo}
                     alt="CA Certification"
