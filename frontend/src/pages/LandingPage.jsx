@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnimatedSection from "../components/AnimatedSection";
-import manImg from "../assets/landingpage/manImage.webp";
+import manImg from "../assets/landingpage/Frame 1.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {
@@ -49,19 +49,19 @@ const LandingPage = () => {
       setCounter({
         years: Math.min(
           Math.floor((targets.years / steps) * step),
-          targets.years
+          targets.years,
         ),
         clients: Math.min(
           Math.floor((targets.clients / steps) * step),
-          targets.clients
+          targets.clients,
         ),
         projects: Math.min(
           Math.floor((targets.projects / steps) * step),
-          targets.projects
+          targets.projects,
         ),
         locations: Math.min(
           Math.floor((targets.locations / steps) * step),
-          targets.locations
+          targets.locations,
         ),
       });
 
@@ -184,7 +184,6 @@ const LandingPage = () => {
 
                 <div className="relative z-10 flex items-center justify-end">
                   <img src={manImg} alt="" className="hero-img " />
-                  {/* Floating Badges */}
                   <div className="absolute -bottom-8 left-8 bg-white rounded-2xl shadow-2xl p-6 transform hover:scale-110 transition-transform duration-300 border-2 border-primary-200 animate-float">
                     <div className="flex items-center gap-4">
                       <div className="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center shadow-lg">
