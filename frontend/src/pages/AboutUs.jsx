@@ -3,7 +3,15 @@ import { Link } from "react-router-dom";
 import AnimatedSection from "../components/AnimatedSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { achievements, coreValuesA, timeline, whyChoose } from "../data/text";
+import {
+  achievements,
+  coreValuesA,
+  credentials,
+  partnersAbout,
+  timeline,
+  whyChoose,
+} from "../data/text";
+import mittal from "../assets/teamMembers/CA. Prashant Mittal.jpeg";
 
 const AboutUs = () => {
   const [activeYear, setActiveYear] = useState(0);
@@ -15,138 +23,6 @@ const AboutUs = () => {
       duration: 800,
     });
   }, []);
-
-  const partners = [
-    {
-      name: "CA. Tilkesh Shah",
-      designation: "FCA",
-      expertise: "Taxation, Project Finance & GST Advisory",
-      experience: "15+ Years",
-      specialization: [
-        "Direct & Indirect Taxation",
-        "GST Compliance",
-        "Project Financing",
-        "Tax Planning",
-      ],
-      image: "TS",
-    },
-    {
-      name: "CA. Manoj Sharma",
-      designation: "FCA",
-      expertise: "Audit, Assurance & Tax Matters",
-      experience: "18+ Years",
-      specialization: [
-        "Statutory Audit",
-        "Internal Audit",
-        "Tax Audit",
-        "Due Diligence",
-      ],
-      image: "MS",
-    },
-    {
-      name: "CA. Nishant Agarwal",
-      designation: "FCA, DISA",
-      expertise: "Financing, Project Funding & Internal Controls",
-      experience: "12+ Years",
-      specialization: [
-        "Project Funding",
-        "Working Capital",
-        "System Audit",
-        "Risk Management",
-      ],
-      image: "NA",
-    },
-    {
-      name: "CA. Manoj Bansal",
-      designation: "FCA",
-      expertise: "Audit Services Across Industries",
-      experience: "16+ Years",
-      specialization: [
-        "Manufacturing Audit",
-        "Trading Audit",
-        "Service Industry",
-        "Compliance",
-      ],
-      image: "MB",
-    },
-    {
-      name: "CA. Nikhil Rathi",
-      designation: "ACA",
-      expertise: "Bank Audits & MSME Finance",
-      experience: "10+ Years",
-      specialization: [
-        "Bank Audits",
-        "MSME Projects",
-        "Subsidy Management",
-        "Financial Advisory",
-      ],
-      image: "NR",
-    },
-    {
-      name: "CA. Sheetal Shaikh",
-      designation: "ACA",
-      expertise: "Compliance, Audit & Secretarial Services",
-      experience: "8+ Years",
-      specialization: [
-        "Corporate Compliance",
-        "ROC Filings",
-        "Secretarial Audit",
-        "Company Law",
-      ],
-      image: "SS",
-    },
-  ];
-
-  // const achievements = [
-  //   { number: "500+", label: "Satisfied Clients", icon: "😊" },
-  //   { number: "1000+", label: "Projects Delivered", icon: "📊" },
-  //   { number: "20+", label: "Years of Excellence", icon: "🏆" },
-  //   { number: "3", label: "Office Locations", icon: "📍" },
-  //   { number: "6", label: "Expert Partners", icon: "👥" },
-  //   { number: "50+", label: "Team Members", icon: "💼" },
-  // ];
-
-  // const whyChoose = [
-  //   {
-  //     title: "Decades of Experience",
-  //     description: "20+ years of proven track record across diverse industries",
-  //     icon: "📅",
-  //   },
-  //   {
-  //     title: "Partner-Level Attention",
-  //     description: "Direct access to senior partners for personalized service",
-  //     icon: "👤",
-  //   },
-  //   {
-  //     title: "Quality Assurance",
-  //     description: "ISO certified with rigorous quality control processes",
-  //     icon: "✓",
-  //   },
-  //   {
-  //     title: "Multi-Location Presence",
-  //     description:
-  //       "Offices in Mumbai, Delhi, and Nagpur for nationwide coverage",
-  //     icon: "🌐",
-  //   },
-  //   {
-  //     title: "Technology Driven",
-  //     description:
-  //       "Modern tools and cloud-based systems for efficient delivery",
-  //     icon: "⚡",
-  //   },
-  //   {
-  //     title: "Client Retention",
-  //     description: "95% client retention rate through consistent excellence",
-  //     icon: "💯",
-  //   },
-  // ];
-
-  const credentials = [
-    { label: "ICAI Registration", value: "FRN 126763W" },
-    { label: "PAN Number", value: "ABGFP5145E" },
-    { label: "GST Number", value: "27ABGFP5145E1Z9" },
-    { label: "ISO Certification", value: "Certified & Peer Reviewed" },
-  ];
 
   return (
     <div className="overflow-hidden bg-white">
@@ -163,8 +39,8 @@ const AboutUs = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <AnimatedSection animation="fade-down" duration={1000}>
-              <span className="px-5 py-2 bg-primary-100 text-primary-700 text-sm font-bold uppercase tracking-wider rounded-full">
-                About S M A R T S & Co.
+              <span className="px-5 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+                About S M A R T S & Co. LLP
               </span>
             </AnimatedSection>
 
@@ -229,12 +105,12 @@ const AboutUs = () => {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-20 bg-white">
+      <section className="py-10 lg:py-20 bg-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection animation="fade-right" duration={1000}>
               <div className="space-y-6">
-                <span className="text-primary-600 font-semibold text-sm uppercase tracking-wider">
+                <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                   Our Story
                 </span>
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 font-heading">
@@ -243,34 +119,25 @@ const AboutUs = () => {
                     Professional Excellence
                   </span>
                 </h2>
-                <div className="space-y-4 text-text-primary font-para text-lg leading-relaxed">
+                <div className="space-y-4 text-text-primary font-para text-base lg:text-lg leading-relaxed">
                   <p>
-                    Founded in 2005 by{" "}
-                    <strong className="text-gray-900">
-                      CA Prashant Mittal
-                    </strong>
-                    , S M A R T S & Co. (previously known as Prashant Mittal and
-                    Associates) has grown from a single-partner firm to a
-                    multi-disciplinary Chartered Accountancy practice with a
-                    strong presence across India.
+                    Founded in 2005 by CA Prashant Mittal , S M A R T S & Co.
+                    LLP (previously known as Prashant Mittal and Associates) has
+                    grown from a single-partner firm to a multi-disciplinary
+                    Chartered Accountancy practice with a strong presence across
+                    India.
                   </p>
                   <p>
-                    Headquartered in{" "}
-                    <strong className="text-gray-900">Mumbai</strong> with
-                    branch offices in{" "}
-                    <strong className="text-gray-900">Delhi and Nagpur</strong>,
-                    we serve a diverse clientele ranging from startups to large
-                    corporations, offering a full suite of professional
-                    services.
+                    Headquartered in Mumbai with branch offices in Mumbai,
+                    Delhi, Nagpur, Ahmedabad, we serve a diverse clientele
+                    ranging from startups to large corporations, offering a full
+                    suite of professional services.
                   </p>
                   <p>
                     Our journey has been marked by unwavering commitment to
                     quality, integrity, and client satisfaction. Today, we stand
-                    proud as an{" "}
-                    <strong className="text-gray-900">
-                      ISO certified and peer-reviewed firm
-                    </strong>
-                    , trusted by over 500 clients nationwide.
+                    proud as an ISO certified and peer-reviewed firm , trusted
+                    by over 500 clients nationwide.
                   </p>
                 </div>
               </div>
@@ -291,7 +158,7 @@ const AboutUs = () => {
                     <h3 className="text-3xl md:text-4xl font-bold text-primary-600 font-heading mb-2">
                       {achievement.number}
                     </h3>
-                    <p className="text-sm text-text-primary font-para">
+                    <p className="text-base lg:text-lg text-text-primary font-para">
                       {achievement.label}
                     </p>
                   </div>
@@ -303,11 +170,11 @@ const AboutUs = () => {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-20 bg-gradient-to-b from-primary-50 to-white">
+      <section className="py-10 lg:py-20 bg-gradient-to-b from-primary-50 to-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-sm font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Vision & Mission
               </span>
             </AnimatedSection>
@@ -348,7 +215,7 @@ const AboutUs = () => {
                 <h3 className="text-3xl font-bold text-gray-900 mb-4 font-heading">
                   Our Vision
                 </h3>
-                <p className="text-lg text-text-primary font-para leading-relaxed">
+                <p className="text-base lg:text-lg text-text-primary font-para leading-relaxed">
                   To be a trusted partner in our clients' growth journey by
                   providing innovative, ethical, and result-oriented
                   professional services that drive sustainable business success.
@@ -376,7 +243,7 @@ const AboutUs = () => {
                 <h3 className="text-3xl font-bold text-gray-900 mb-4 font-heading">
                   Our Mission
                 </h3>
-                <p className="text-lg text-text-primary font-para leading-relaxed">
+                <p className="text-base lg:text-lg text-text-primary font-para leading-relaxed">
                   To deliver excellence in audit, advisory, and assurance
                   through integrity, precision, and professional commitment
                   while empowering businesses with strategic financial insights.
@@ -386,13 +253,12 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
       {/* Core Values */}
-      <section className="py-20 bg-white">
+      <section className="py-10 lg:py-20 bg-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-sm font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Core Values
               </span>
             </AnimatedSection>
@@ -423,7 +289,7 @@ const AboutUs = () => {
                   <h3 className="text-2xl font-bold text-gray-900 mb-3 font-heading">
                     {value.title}
                   </h3>
-                  <p className="text-text-primary font-para leading-relaxed">
+                  <p className="text-text-primary font-para leading-relaxed text-base lg:text-lg">
                     {value.description}
                   </p>
                 </div>
@@ -432,13 +298,12 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
       {/* Timeline */}
-      <section className="py-20 bg-gradient-to-b from-primary-50 to-white">
+      <section className="py-10 lg:py-20 bg-gradient-to-b from-primary-50 to-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-sm font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Our Journey
               </span>
             </AnimatedSection>
@@ -476,7 +341,7 @@ const AboutUs = () => {
                     >
                       <div className="p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-primary-200 hover:border-primary-400 transform hover:-translate-y-2">
                         <div className="flex items-center gap-4 mb-4">
-                          <div className="text-4xl">{item.icon}</div>
+                          {/* <div className="text-4xl">{item.icon}</div> */}
                           <div className={index % 2 === 0 ? "md:ml-auto" : ""}>
                             <h3 className="text-3xl font-bold text-primary-600 font-heading">
                               {item.year}
@@ -486,7 +351,7 @@ const AboutUs = () => {
                             </p>
                           </div>
                         </div>
-                        <p className="text-text-primary font-para text-lg">
+                        <p className="text-text-primary font-para text-base lg:text-lg">
                           {item.description}
                         </p>
                       </div>
@@ -507,11 +372,11 @@ const AboutUs = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="py-10 lg:py-20 bg-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-sm font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Why Choose Us
               </span>
             </AnimatedSection>
@@ -524,7 +389,6 @@ const AboutUs = () => {
               </h2>
             </AnimatedSection>
           </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyChoose.map((item, index) => (
               <AnimatedSection
@@ -534,13 +398,13 @@ const AboutUs = () => {
                 duration={1000}
               >
                 <div className="group p-8 bg-gradient-to-br from-primary-50 to-white rounded-2xl border-2 border-primary-200 hover:border-primary-400 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 text-center flex flex-col gap-2 justify-center items-center">
-                  <div className="w-20 h-20 bg-gradient-to-br from-primary-400 to-primary-600 rounded-2xl flex items-center justify-center text-white shadow-lg flex-shrink-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary-400 to-primary-600 rounded-2xl flex items-center justify-center text-white shadow-lg flex-shrink-0">
                     {item.icon}
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3 font-heading">
                     {item.title}
                   </h3>
-                  <p className="text-text-primary font-para leading-relaxed">
+                  <p className="text-text-primary font-para leading-relaxed text-base lg:text-lg">
                     {item.description}
                   </p>
                 </div>
@@ -550,12 +414,48 @@ const AboutUs = () => {
         </div>
       </section>
 
+      <section className="container mx-auto flex flex-col md:flex-row gap-10 py-10 lg:py-20">
+        <div className="w-full flex items-center justify-center">
+          <img
+            src={mittal}
+            alt="mittal image"
+            className="rounded-full w-[200px] lg:w-[400px] h-full "
+          />
+        </div>
+        <div className="w-full flex flex-col gap-3 px-5 md:px-10 ">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-900 font-heading">
+            Chairman Emeritus –{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-700">
+              CA. Prashant Mittal
+            </span>
+          </h2>
+          <p className="text-text-primary font-para leading-relaxed text-base lg:text-lg">
+            CA. Prashant Mittal is the guiding force and institutional backbone
+            of SMARTS & Co. LLP. Qualifying as a Chartered Accountant at the age
+            of 19, he laid the foundation for a career defined by discipline,
+            foresight, and ethical leadership.
+          </p>
+          <p className="text-text-primary font-para leading-relaxed text-base lg:text-lg">
+            With over two decades of experience, he has advised businesses
+            across audit, taxation, corporate advisory, regulatory matters, and
+            project finance. His approach emphasizes strong governance,
+            practical solutions, and long-term sustainability over short-term
+            fixes.
+          </p>
+          <p className="text-text-primary font-para leading-relaxed text-base lg:text-lg">
+            As Chairman Emeritus, he continues to guide the firm’s leadership,
+            ensuring continuity of values, professional rigor, and
+            relationship-driven advisory—principles that define SMARTS’ role as
+            a trusted long-term business partner.
+          </p>
+        </div>
+      </section>
       {/* Meet Our Partners */}
       <section className="py-20 bg-gradient-to-b from-primary-50 to-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-sm font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Our Leadership
               </span>
             </AnimatedSection>
@@ -574,7 +474,7 @@ const AboutUs = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {partners.map((partner, index) => (
+            {partnersAbout.map((partner, index) => (
               <AnimatedSection
                 key={index}
                 animation="fade-up"
@@ -583,23 +483,29 @@ const AboutUs = () => {
               >
                 <div className="group h-full p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 border-2 border-primary-200 hover:border-primary-400">
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-24 h-24 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6 group-hover:scale-110 transition-transform duration-300 shadow-xl">
-                      {partner.image}
+                    <div className="w-24 h-24  mb-6">
+                      <img
+                        src={partner.image}
+                        alt=""
+                        className="rounded-full w-full h-full object-cover object-left-top"
+                      />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-1 font-heading">
                       {partner.name}
                     </h3>
-                    <p className="text-primary-600 font-bold mb-2">
-                      {partner.designation}
+                    <p className="text-primary-600 font-bold mb-2 flex items-center gap-2">
+                      {partner.designation} (
+                      <span className="text-sm font-semibold text-gray-900  flex items-center justify-center gap-2">
+                        {partner.experience}
+                      </span>
+                      )
                     </p>
-                    <p className="text-text-primary font-para mb-4">
+                    <p className="text-text-primary font-para mb-4 text-base lg:text-lg">
                       {partner.expertise}
                     </p>
-                    <div className="w-full border-t border-primary-200 pt-4 mt-4">
-                      <p className="text-sm font-semibold text-gray-900 mb-3 flex items-center justify-center gap-2">
-                        <span>⏱️</span> {partner.experience}
-                      </p>
-                      <ul className="space-y-2">
+                    <div className="w-full border-t border-primary-200 pt-4 mt-4 text-base lg:text-lg">
+                      <p>{partner.specialization.join(", ")}</p>
+                      {/* <ul className="space-y-2">
                         {partner.specialization.map((spec, idx) => (
                           <li
                             key={idx}
@@ -609,7 +515,7 @@ const AboutUs = () => {
                             {spec}
                           </li>
                         ))}
-                      </ul>
+                      </ul> */}
                     </div>
                   </div>
                 </div>
@@ -618,7 +524,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
@@ -636,17 +541,17 @@ const AboutUs = () => {
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white font-heading">
                   Ready to Experience Excellence?
                 </h2>
-                <p className="text-white/95 text-xl md:text-2xl max-w-3xl mx-auto font-para">
-                  Join 500+ satisfied clients who trust S M A R T S & Co. for
-                  their financial success
+                <p className="text-white text-lg lg:text-xl  max-w-3xl mx-auto font-para">
+                  Join 500+ satisfied clients who trust S M A R T S & Co. LLP
+                  for their financial success
                 </p>
 
                 <div className="flex flex-wrap justify-center gap-4 pt-6">
                   <Link
                     to="/contact"
-                    className="group px-10 py-5 bg-white text-primary-700 font-bold text-lg rounded-full hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-2"
+                    className="group px-10 py-5 bg-white font-heading text-primary-700 font-bold text-lg rounded-full hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-2"
                   >
-                    Schedule a Meeting
+                    Get Consultation
                     <svg
                       className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
                       fill="none"
@@ -663,7 +568,7 @@ const AboutUs = () => {
                   </Link>
                   <a
                     href="tel:+919819082400"
-                    className="px-10 py-5 bg-white/10 backdrop-blur-sm text-white font-bold text-lg rounded-full border-2 border-white hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
+                    className="px-10 py-5 bg-white/10 backdrop-blur-sm font-heading text-white font-bold text-lg rounded-full border-2 border-white hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
                   >
                     <svg
                       className="w-6 h-6"

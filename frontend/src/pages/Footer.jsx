@@ -34,7 +34,7 @@ const Footer = () => {
     { name: "Privacy Policy", path: "/privacy-policy" },
     { name: "Terms & Conditions", path: "/terms" },
     { name: "Disclaimer", path: "/disclaimer" },
-    { name: "Refund Policy", path: "/refund-policy" },
+    // { name: "Refund Policy", path: "/refund-policy" },
   ];
 
   const socialLinks = [
@@ -89,24 +89,24 @@ const Footer = () => {
     {
       city: "Mumbai",
       address: "306, Linkway Estate, Malad West, Mumbai - 400064",
-      phone: "+91 98190 82400",
+      phone: "+91 98190 82700",
     },
     {
       city: "Delhi",
       address: "Delhi Branch Office",
-      phone: "+91 98190 82400",
+      phone: "+91 98190 82700",
     },
     {
       city: "Nagpur",
       address: "Nagpur Branch Office",
-      phone: "+91 98190 82400",
+      phone: "+91 98190 82700",
     },
   ];
 
   return (
     <footer className="bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Newsletter Section */}
-      <div className="bg-gradient-to-r from-primary-500 to-primary-700 py-12">
+      {/* <div className="bg-gradient-to-r from-primary-500 to-primary-700 py-12">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-center md:text-left">
@@ -146,7 +146,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Footer Content */}
       <div className="py-16 border-b border-gray-800">
@@ -156,7 +156,7 @@ const Footer = () => {
             <div className="lg:col-span-2">
               <Link to="/" className="inline-block mb-6">
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent font-heading">
-                  S M A R T S & Co.
+                  S M A R T S & Co. LLP
                 </h2>
               </Link>
               <p className="text-gray-400 mb-6 leading-relaxed font-para">
@@ -330,7 +330,7 @@ const Footer = () => {
                       href="tel:+919819082400"
                       className="text-gray-400 hover:text-primary-500 transition-colors block font-para"
                     >
-                      +91 98190 82400
+                      +91 98190 82700
                     </a>
                     <a
                       href="tel:02242640413"
@@ -357,10 +357,17 @@ const Footer = () => {
                   </svg>
                   <div>
                     <a
-                      href="mailto:pm.associates@hotmail.com"
+                      href="mailto:info@smartsca.co.in"
                       className="text-gray-400 hover:text-primary-500 transition-colors block break-all font-para"
                     >
-                      pm.associates@hotmail.com
+                      info@smartsca.co.in
+                    </a>
+                    <a
+                      href="mailto:admin@smartsca.co.in"
+                      className="text-gray-400 hover:text-primary-500 transition-colors block break-all font-para"
+                    >
+                      {" "}
+                      admin@smartsca.co.in
                     </a>
                   </div>
                 </div>
@@ -398,7 +405,7 @@ const Footer = () => {
       </div>
 
       {/* Office Locations */}
-      <div className="py-12 bg-gray-900/50 border-b border-gray-800">
+      {/* <div className="py-12 bg-gray-900/50 border-b border-gray-800">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <h3 className="text-xl font-bold mb-8 text-center font-heading">
             Our Office Locations
@@ -448,7 +455,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Bottom Bar */}
       <div className="py-8 bg-black">
@@ -456,9 +463,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <div className="text-gray-400 text-sm text-center md:text-left font-para">
-              © {new Date().getFullYear()} S M A R T S & Co. All rights
-              reserved. | Designed with <span className="text-red-500">♥</span>{" "}
-              in India
+              © {new Date().getFullYear()} S M A R T S & Co. LLP All rights
+              reserved. | SMARTS & CO. LLP
             </div>
 
             {/* Legal Links */}

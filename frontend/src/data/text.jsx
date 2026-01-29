@@ -1,3 +1,9 @@
+import part_1 from "../assets/teamMembers/Manoj Bhansal.webp";
+import part_2 from "../assets/teamMembers/Manoj Sharma.webp";
+import part_3 from "../assets/teamMembers/Nikhil Rathi.webp";
+import part_4 from "../assets/teamMembers/Nishant Agarwal.webp";
+import part_5 from "../assets/teamMembers/Sheetal.webp";
+import part_6 from "../assets/teamMembers/Tilkesh.webp";
 export const MenuBar = [
   {
     path: "/",
@@ -385,24 +391,38 @@ export const partners = [
     name: "CA. Tilkesh Shah",
     designation: "FCA",
     expertise: "Taxation & GST",
+    image: part_6,
   },
   {
     name: "CA. Manoj Sharma",
     designation: "FCA",
     expertise: "Audit & Assurance",
+    image: part_2,
   },
   {
     name: "CA. Nishant Agarwal",
     designation: "FCA, DISA",
     expertise: "Project Finance",
+    image: part_4,
   },
   {
     name: "CA. Manoj Bansal",
     designation: "FCA",
     expertise: "Audit Services",
+    image: part_1,
   },
-  { name: "CA. Nikhil Rathi", designation: "ACA", expertise: "Bank Audits" },
-  { name: "CA. Sheetal Shaikh", designation: "ACA", expertise: "Compliance" },
+  {
+    name: "CA. Nikhil Rathi",
+    designation: "ACA",
+    expertise: "Bank Audits",
+    image: part_3,
+  },
+  {
+    name: "CA. Sheetal Shaikh",
+    designation: "ACA",
+    expertise: "Compliance",
+    image: part_5,
+  },
 ];
 
 export const processSteps = [
@@ -441,9 +461,9 @@ export const coreValues = [
 export const contactMethods = [
   {
     title: "Call Us",
-    info: "+91 98190 82400",
-    subInfo: "022-4264 0413 / 2877 7391",
-    link: "tel:+919819082400",
+    info: "+91 98190 82700",
+    subInfo: "022-4264 0413",
+    link: "tel:+919819082700",
     icon: (
       <svg
         className="w-8 h-8"
@@ -462,9 +482,9 @@ export const contactMethods = [
   },
   {
     title: "Email Us",
-    info: "pm.associates@hotmail.com",
-    subInfo: "prashmittal@yahoo.com",
-    link: "mailto:pm.associates@hotmail.com",
+    info: "info@smartsca.co.in",
+    subInfo: "admin@smartsca.co.in",
+    link: "mailto:info@smartsca.co.in",
     icon: (
       <svg
         className="w-8 h-8"
@@ -484,7 +504,7 @@ export const contactMethods = [
   {
     title: "Visit Us",
     info: "Mumbai Head Office",
-    subInfo: "Mon - Sat: 9:00 AM - 6:00 PM",
+    subInfo: "Mon - Sat: 10:00 AM - 7:00 PM",
     link: "#locations",
     icon: (
       <svg
@@ -515,26 +535,37 @@ export const offices = [
     city: "Mumbai",
     type: "Head Office",
     address:
-      "306, Linkway Estate Premises, Above Greens Restaurant, New Link Road, Malad (West), Mumbai - 400064",
-    phone: "+91 98190 82400",
+      "1202 , Lotus Arc One, New Link Road, Opp. Tanishq Showroom, Andheri West, Mumbai- 400013",
+    phone: "+91 98190 82700",
     email: "pm.associates@hotmail.com",
-    timings: "Mon - Sat: 9:00 AM - 6:00 PM",
+    timings: "Mon - Sat: 10:00 AM - 6:30 PM",
   },
   {
     city: "Delhi",
     type: "Branch Office",
-    address: "Delhi Branch Office Address",
-    phone: "+91 98190 82400",
+    address:
+      "H.No. 102-103, 3rd floor, Pocket-8, Sector-23, Rohini PO, Rohini Sector-7 , DIST North West Delhi, Delhi - 110085",
+    phone: "+91 98190 82700",
     email: "pm.associates@hotmail.com",
-    timings: "Mon - Sat: 9:00 AM - 6:00 PM",
+    timings: "Mon - Sat: 10:00 AM - 6:30 PM",
   },
   {
     city: "Nagpur",
     type: "Branch Office",
-    address: "Nagpur Branch Office Address",
-    phone: "+91 98190 82400",
+    address:
+      "74, Samaj Ekta Society, Near Mausam Colony, Somalwada, Manish Nagar, Nagpur - 440005",
+    phone: "+91 98190 82700",
     email: "pm.associates@hotmail.com",
-    timings: "Mon - Sat: 9:00 AM - 6:00 PM",
+    timings: "Mon - Sat: 10:00 AM - 6:30 PM",
+  },
+  {
+    city: "Ahmedabad",
+    type: "Branch Office",
+    address:
+      "A-332, Sumel 8, Ajit Mill Cross Road, Rakhial, Ahmedabad - 380023.",
+    phone: "+91 98190 82700",
+    email: "pm.associates@hotmail.com",
+    timings: "Mon - Sat: 10:00 AM - 6:30 PM",
   },
 ];
 
@@ -551,11 +582,11 @@ export const servicesC = [
 ];
 
 export const faqs = [
-  {
-    question: "What are your consultation charges?",
-    answer:
-      "We offer a free initial consultation to understand your requirements. Our service charges vary based on the scope and complexity of work.",
-  },
+  // {
+  //   question: "What are your consultation charges?",
+  //   answer:
+  //     "We offer a free initial consultation to understand your requirements. Our service charges vary based on the scope and complexity of work.",
+  // },
   {
     question: "How quickly can you respond to urgent matters?",
     answer:
@@ -1001,7 +1032,8 @@ export const timeline = [
   {
     year: "2023",
     title: "Rebranding",
-    description: "Rebranded to S M A R T S & Co., achieved ISO certification",
+    description:
+      "Rebranded to S M A R T S & Co. LLP, achieved ISO certification",
     icon: (
       <svg
         className="w-8 h-8"
@@ -1061,7 +1093,7 @@ export const coreValuesA = [
         />
       </svg>
     ),
-    color: "from-blue-400 to-blue-600",
+    color: "from-primary-400 to-primary-600",
   },
   {
     title: "Professionalism",
@@ -1082,7 +1114,7 @@ export const coreValuesA = [
         />
       </svg>
     ),
-    color: "from-purple-400 to-purple-600",
+    color: "from-primary-400 to-primary-600",
   },
   {
     title: "Confidentiality",
@@ -1102,7 +1134,7 @@ export const coreValuesA = [
         />
       </svg>
     ),
-    color: "from-green-400 to-green-600",
+    color: "from-primary-400 to-primary-600",
   },
   {
     title: "Client-Centric Approach",
@@ -1144,7 +1176,7 @@ export const coreValuesA = [
         />
       </svg>
     ),
-    color: "from-pink-400 to-pink-600",
+    color: "from-primary-400 to-primary-600",
   },
   {
     title: "Continuous Learning",
@@ -1165,7 +1197,7 @@ export const coreValuesA = [
         />
       </svg>
     ),
-    color: "from-indigo-400 to-indigo-600",
+    color: "from-primary-400 to-primary-600",
   },
 ];
 export const achievements = [
@@ -1227,7 +1259,7 @@ export const achievements = [
     ),
   },
   {
-    number: "3",
+    number: "4",
     label: "Office Locations",
     icon: (
       <svg
@@ -1350,8 +1382,7 @@ export const whyChoose = [
   },
   {
     title: "Multi-Location Presence",
-    description:
-      "Offices in Mumbai, Delhi, and Nagpur for nationwide coverage",
+    description: "Offices in Mumbai, Delhi, and Nagpur for nationwide coverage",
     icon: (
       <svg
         className="w-8 h-8"
@@ -1370,8 +1401,7 @@ export const whyChoose = [
   },
   {
     title: "Technology Driven",
-    description:
-      "Modern tools and cloud-based systems for efficient delivery",
+    description: "Modern tools and cloud-based systems for efficient delivery",
     icon: (
       <svg
         className="w-8 h-8"
@@ -1407,6 +1437,103 @@ export const whyChoose = [
       </svg>
     ),
   },
+];
+export const partnersAbout = [
+  {
+    name: "CA. Tilkesh Shah",
+    designation: "FCA",
+    expertise: "Taxation, Project Finance & Audit Services",
+    experience: "8+ Years",
+    specialization: [
+      "Direct & Indirect Taxation",
+      "GST Compliance & Advisory",
+      "Project Finance",
+      "Funding Advisory",
+      "Implementation Strategies",
+    ],
+    image: part_6,
+  },
+  {
+    name: "CA. Nishant Agarwal",
+    designation: "FCA, DISA",
+    expertise: "Financing, Project Funding & SME Advisory",
+    experience: "12+ Years",
+    specialization: [
+      "Project Funding Assessment",
+      "Internal Control Systems",
+      "System & Information Audit",
+      "SME Advisory",
+      "Government & Banking Sector Exposure",
+    ],
+    image: part_4,
+  },
+  {
+    name: "CA. Nikhil Rathi",
+    designation: "ACA",
+    expertise: "Government, Bank & Cooperative Audits",
+    experience: "4+ Years",
+    specialization: [
+      "Government Audits",
+      "Bank & Cooperative Audits",
+      "MSME Finance",
+      "Project Funding",
+      "Subsidy Advisory",
+      "IBC Assignments",
+    ],
+    image: part_3,
+  },
+  {
+    name: "CA. Manoj Sharma",
+    designation: "FCA",
+    expertise: "Audit, Assurance & Regulatory Compliance",
+    experience: "7+ Years",
+    specialization: [
+      "Statutory & Internal Audit",
+      "System Audit",
+      "Direct & Indirect Taxation",
+      "Regulatory Compliance",
+      "Appellate Representations",
+      "Service & Infrastructure Sectors",
+    ],
+    image: part_2,
+  },
+  {
+    name: "CA. Manoj Bansal",
+    designation: "FCA",
+    expertise: "Statutory Audit, GST & Tax Audits",
+    experience: "12+ Years",
+    specialization: [
+      "Statutory & Internal Audits",
+      "GST Compliance",
+      "Tax Audits",
+      "Consolidated Financial Statements",
+      "Construction & Hospitality Sector",
+      "Capital Markets & MSMEs",
+    ],
+    image: part_1,
+  },
+  {
+    name: "CA. Sheetal Shaikh",
+    designation: "ACA",
+    expertise: "Audit, Compliance & Corporate Secretarial Services",
+    experience: "8+ Years",
+    specialization: [
+      "Audit & Assurance",
+      "Corporate Compliance",
+      "Secretarial Services",
+      "Banking & IT Sector",
+      "Infrastructure & Export Sector",
+      "Service Industry",
+    ],
+    image: part_5,
+  },
+];
+
+export const credentials = [
+  { label: "ICAI Registration", value: "FRN 126763W" },
+  { label: "PAN Number", value: "ABGFP5145E" },
+  { label: "GST Number", value: "27ABGFP5145E1Z9" },
+  { label: "ISO Certification", value: "Certified & Peer Reviewed" },
 ];
 
 //about page contetn end

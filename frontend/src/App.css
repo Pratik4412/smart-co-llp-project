@@ -100,6 +100,7 @@ html {
   aspect-ratio: auto 481 / 617;
   height: 617px;
   aspect-ratio: auto 481 / 617;
+  object-fit: cover;
   /* border-radius: 50%; */
   /* border-bottom: 8px solid gray; */
 }

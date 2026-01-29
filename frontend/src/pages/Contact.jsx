@@ -65,7 +65,7 @@ const Contact = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <AnimatedSection animation="fade-down" duration={1000}>
-              <span className="px-5 py-2 bg-primary-100 text-primary-700 text-sm font-bold uppercase tracking-wider rounded-full">
+              <span className="px-5 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Get in Touch
               </span>
             </AnimatedSection>
@@ -125,7 +125,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form & Info Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-primary-50">
+      <section className="py-10 lg:py-20  bg-gradient-to-b from-white to-primary-50">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Form */}
@@ -327,12 +327,12 @@ const Contact = () => {
                         <p className="text-sm text-white/90 font-para">
                           Monday - Saturday
                           <br />
-                          9:00 AM - 6:00 PM IST
+                          10:00 AM - 6:30 PM IST
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4">
+                    {/* <div className="flex items-start gap-4">
                       <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
                         <svg
                           className="w-5 h-5"
@@ -378,7 +378,7 @@ const Contact = () => {
                           First consultation is always free
                         </p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </AnimatedSection>
@@ -433,11 +433,11 @@ const Contact = () => {
       </section>
 
       {/* Office Locations */}
-      <section id="locations" className="py-20 bg-white">
+      <section id="locations" className="py-10 lg:py-20  bg-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-sm font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Our Offices
               </span>
             </AnimatedSection>
@@ -451,7 +451,7 @@ const Contact = () => {
             </AnimatedSection>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {offices.map((office, index) => (
               <AnimatedSection
                 key={index}
@@ -459,7 +459,7 @@ const Contact = () => {
                 delay={index * 100}
                 duration={1000}
               >
-                <div className="h-full p-8 bg-gradient-to-br from-primary-50 to-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-primary-100 hover:border-primary-400">
+                <div className="h-full p-4 bg-gradient-to-br from-primary-50 to-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-primary-100 hover:border-primary-400">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center text-white shadow-md">
                       <svg
@@ -507,7 +507,7 @@ const Contact = () => {
                           d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                         />
                       </svg>
-                      <p className="text-text-primary font-para text-sm">
+                      <p className="text-text-primary font-para text-sm lg:text-base">
                         {office.address}
                       </p>
                     </div>
@@ -528,7 +528,7 @@ const Contact = () => {
                       </svg>
                       <a
                         href={`tel:${office.phone}`}
-                        className="text-text-primary hover:text-primary-600 transition-colors font-para text-sm"
+                        className="text-text-primary hover:text-primary-600 transition-colors font-para  text-sm lg:text-base"
                       >
                         {office.phone}
                       </a>
@@ -548,7 +548,7 @@ const Contact = () => {
                           d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                         />
                       </svg>
-                      <p className="text-text-primary font-para text-sm">
+                      <p className="text-text-primary font-para  text-sm lg:text-base">
                         {office.timings}
                       </p>
                     </div>
@@ -561,11 +561,11 @@ const Contact = () => {
       </section>
 
       {/* FAQs */}
-      <section className="py-20 bg-gradient-to-b from-primary-50 to-white">
+      <section className="py-10 lg:py-20 bg-gradient-to-b from-primary-50 to-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-sm font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 FAQs
               </span>
             </AnimatedSection>
@@ -603,7 +603,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section (Placeholder) */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <AnimatedSection animation="fade-up" duration={1000}>
             <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-primary-100">
@@ -620,7 +620,7 @@ const Contact = () => {
             </div>
           </AnimatedSection>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
