@@ -168,6 +168,30 @@ html {
   }
 }
 
+/* Fix Swiper pagination spacing */
+.industries-swiper {
+  padding-bottom: 40px !important;
+}
+
+.industries-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.industries-swiper .swiper-pagination-bullet {
+  background: var(--primary-700); 
+  /* Replace with your primary color */
+  opacity: 0.5;
+  width: 8px;
+  height: 8px;
+  transition: all 0.3s ease;
+}
+
+.industries-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 24px;
+  border-radius: 4px;
+}
+
 /* Floating Animation */
 /* @keyframes float {
 

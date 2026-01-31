@@ -44,7 +44,7 @@ const Header = () => {
         <div className="container mx-auto py-4 px-5 md:px-10 lg:px-20">
           <div
             className={`flex items-center justify-between rounded-xl transition-all duration-300 ${
-              isScrolled ? "py-2" : "py-3"
+              isScrolled ? "py-1" : " "
             }`}
           >
             {/* Logo */}
@@ -71,8 +71,8 @@ const Header = () => {
                     location.pathname === item.path
                       ? "text-primary-500"
                       : isScrolled
-                      ? "text-gray-200 hover:text-primary-500"
-                      : "text-gray-300 hover:text-primary-400"
+                        ? "text-gray-200 hover:text-primary-500"
+                        : "text-gray-300 hover:text-primary-400"
                   }`}
                 >
                   {item.name}
@@ -103,8 +103,8 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`lg:hidden p-2.5 rounded-lg transition-all duration-300 ${
                 isScrolled
-                  ? "text-gray-700 hover:bg-primary-50 hover:text-primary-500"
-                  : "text-gray-800 hover:bg-white/20 hover:text-primary-500"
+                  ? "text-white hover:bg-primary-50 hover:text-white"
+                  : "text-white hover:bg-white hover:text-white"
               }`}
               aria-label="Toggle menu"
             >
@@ -168,7 +168,7 @@ const Header = () => {
             />
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="p-2.5 text-gray-700 hover:bg-primary-50 hover:text-primary-500 rounded-lg transition-all duration-300"
+              className="p-2.5 text-gray-50 hover:bg-primary-50 hover:text-white rounded-lg transition-all duration-300"
               aria-label="Close menu"
             >
               <svg

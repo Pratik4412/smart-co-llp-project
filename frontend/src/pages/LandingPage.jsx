@@ -175,7 +175,7 @@ const LandingPage = () => {
               animation="fade-left"
               delay={400}
               duration={1200}
-              className="relative"
+              className="relative hidden lg:block"
             >
               <div className="relative">
                 {/* Decorative Elements */}
@@ -183,7 +183,11 @@ const LandingPage = () => {
                 <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-gradient-to-br from-primary-400 to-primary-600 rounded-3xl opacity-20 animate-bounce-slow"></div>
 
                 <div className="relative z-10 flex items-center justify-end">
-                  <img src={manImg} alt="" className="hero-img " />
+                  <img
+                    src={manImg}
+                    alt="Professional consultation"
+                    className="hero-img"
+                  />
                   <div className="absolute -bottom-8 left-8 bg-white rounded-2xl shadow-2xl p-6 transform hover:scale-110 transition-transform duration-300 border-2 border-primary-200 animate-float">
                     <div className="flex items-center gap-4">
                       <div className="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center shadow-lg">
@@ -217,7 +221,7 @@ const LandingPage = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-1 md:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-primary-500 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-primary-500 rounded-full mt-2 animate-pulse"></div>
           </div>

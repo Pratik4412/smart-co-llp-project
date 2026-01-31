@@ -9,20 +9,155 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
+// const industries = [
+//   "Banking",
+//   "Manufacturing",
+//   "Real Estate",
+//   "IT & Tech",
+//   "Healthcare",
+//   "Retail",
+//   "Education",
+//   "Hospitality",
+//   "Export",
+//   "Infrastructure",
+//   "MSME",
+//   "Startups",
+// ];
 const industries = [
-  "Banking",
-  "Manufacturing",
-  "Real Estate",
-  "IT & Tech",
-  "Healthcare",
-  "Retail",
-  "Education",
-  "Hospitality",
-  "Export",
-  "Infrastructure",
-  "MSME",
-  "Startups",
+  {
+    name: "Banking",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    ),
+  },
+  {
+    name: "Manufacturing",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+      />
+    ),
+  },
+  {
+    name: "Real Estate",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+      />
+    ),
+  },
+  {
+    name: "IT & Tech",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      />
+    ),
+  },
+  {
+    name: "Healthcare",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+      />
+    ),
+  },
+  {
+    name: "Retail",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+      />
+    ),
+  },
+  {
+    name: "Education",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+      />
+    ),
+  },
+  {
+    name: "Hospitality",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
+      />
+    ),
+  },
+  {
+    name: "Export",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    ),
+  },
+  {
+    name: "Infrastructure",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+      />
+    ),
+  },
+  {
+    name: "MSME",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      />
+    ),
+  },
+  {
+    name: "Startups",
+    icon: (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M13 10V3L4 14h7v7l9-11h-7z"
+      />
+    ),
+  },
 ];
+
 const Services = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [selectedService, setSelectedService] = useState(null);
@@ -553,10 +688,10 @@ const Services = () => {
       </section>
 
       {/* Industries We Serve */}
-      <section className="py-10 lg:py-20 bg-white">
+      {/* <section className="py-10 lg:py-20 bg-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
-          {/* Heading */}
-          <div className="text-center mb-16">
+
+          <div className="text-center mb-8 md:mb-16">
             <AnimatedSection animation="fade-up">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
                 Industries We{" "}
@@ -567,7 +702,6 @@ const Services = () => {
             </AnimatedSection>
           </div>
 
-          {/* Slider */}
           <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={20}
@@ -575,13 +709,13 @@ const Services = () => {
             pagination={{ clickable: true }}
             breakpoints={{
               0: {
-                slidesPerView: 2, // Mobile
+                slidesPerView: 2, 
               },
               640: {
-                slidesPerView: 3, // Tablet
+                slidesPerView: 3,
               },
               1024: {
-                slidesPerView: 6, // Desktop
+                slidesPerView: 6, 
               },
             }}
           >
@@ -612,6 +746,68 @@ const Services = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+      </section> */}
+      <section className="py-10 lg:py-20 bg-white">
+        <div className="container mx-auto px-5 md:px-10 lg:px-20">
+          {/* Heading */}
+          <div className="text-center mb-8 md:mb-16">
+            <AnimatedSection animation="fade-up">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+                Industries We{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-700">
+                  Proudly Serve
+                </span>
+              </h2>
+            </AnimatedSection>
+          </div>
+
+          {/* Slider */}
+          <div className="pb-12">
+            <Swiper
+              modules={[Autoplay, Pagination]}
+              spaceBetween={20}
+              autoplay={{ delay: 2500, disableOnInteraction: false }}
+              pagination={{
+                clickable: true,
+                dynamicBullets: true,
+              }}
+              breakpoints={{
+                0: {
+                  slidesPerView: 2,
+                },
+                640: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 6,
+                },
+              }}
+              className="industries-swiper"
+            >
+              {industries.map((industry, index) => (
+                <SwiperSlide key={index}>
+                  <AnimatedSection animation="flip-up">
+                    <div className="p-6 bg-gradient-to-br from-primary-50 to-white rounded-2xl border-2 border-primary-200 hover:border-primary-400 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center group">
+                      <div className="w-12 h-12 mx-auto mb-3 bg-primary-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg
+                          className="w-6 h-6 text-primary-600"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          {industry.icon}
+                        </svg>
+                      </div>
+                      <p className="text-sm font-bold text-gray-900">
+                        {industry.name}
+                      </p>
+                    </div>
+                  </AnimatedSection>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </section>
 
