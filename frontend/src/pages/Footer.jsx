@@ -464,7 +464,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-gray-400 text-sm text-center md:text-left font-para">
               © {new Date().getFullYear()} S M A R T S & Co. LLP All rights
-              reserved. | SMARTS & CO. LLP
+              reserved. | S M A R T S & CO. LLP
             </div>
 
             {/* Legal Links */}

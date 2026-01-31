@@ -431,7 +431,7 @@ const AboutUs = () => {
           </h2>
           <p className="text-text-primary font-para leading-relaxed text-base lg:text-lg">
             CA. Prashant Mittal is the guiding force and institutional backbone
-            of SMARTS & Co. LLP. Qualifying as a Chartered Accountant at the age
+            of S M A R T S & Co. LLP. Qualifying as a Chartered Accountant at the age
             of 19, he laid the foundation for a career defined by discipline,
             foresight, and ethical leadership.
           </p>
