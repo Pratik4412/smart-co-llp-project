@@ -12,6 +12,7 @@ import {
   services,
   whyChooseUs,
 } from "../data/text";
+import class_co_1 from "../assets/class-co1.svg";
 
 const LandingPage = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -73,8 +74,10 @@ const LandingPage = () => {
   return (
     <div className="overflow-hidden bg-white">
       {/* Hero Section - Enhanced */}
+
       <section className="relative w-full min-h-screen bg-gradient-to-br from-primary-50 via-white to-primary-50 pt-24 pb-12 md:pt-32 md:pb-20">
         {/* Animated Background Elements */}
+
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary-300 rounded-full blur-3xl opacity-20 animate-pulse"></div>
           <div
@@ -179,7 +182,7 @@ const LandingPage = () => {
             >
               <div className="relative">
                 {/* Decorative Elements */}
-                <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-primary-400 to-primary-600 rounded-3xl opacity-20 animate-spin-slow"></div>
+                {/* <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-primary-400 to-primary-600 rounded-3xl opacity-20 animate-spin-slow"></div> */}
                 <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-gradient-to-br from-primary-400 to-primary-600 rounded-3xl opacity-20 animate-bounce-slow"></div>
 
                 <div className="relative z-10 flex items-center justify-end">
@@ -194,16 +197,16 @@ const LandingPage = () => {
                         <span className="text-2xl">✓</span>
                       </div>
                       <div>
-                        <p className="text-xl font-bold text-gray-900 font-heading">
+                        <p className="text-sm text-text-primary font-para">
                           ISO Certified
                         </p>
-                        <p className="text-sm text-text-primary font-para">
+                        <p className="text-xl font-bold text-gray-900 font-heading">
                           Peer Reviewed Firm
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div
+                  {/* <div
                     className="absolute -top-8 -right-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl shadow-2xl p-5 text-white transform hover:scale-110 transition-transform duration-300 animate-float"
                     style={{ animationDelay: "1s" }}
                   >
@@ -213,7 +216,7 @@ const LandingPage = () => {
                     <p className="text-sm opacity-90 font-para">
                       Projects Done
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </AnimatedSection>
@@ -259,7 +262,15 @@ const LandingPage = () => {
         </div>
       </section>
       {/* About Section */}
-      <section className="py-10 lg:py-20 bg-white">
+      <section className="py-10 lg:py-20 bg-white relative overflow-hidden">
+        {/* Background Logo Watermark */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-3 pointer-events-none">
+          <img
+            src={class_co_1}
+            alt="SMARTS & Co Background"
+            className="w-[600px] h-[600px] object-contain"
+          />
+        </div>
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection animation="fade-right" duration={1000}>
@@ -548,7 +559,7 @@ const LandingPage = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-10 lg:py-20 bg-white">
+      {/* <section className="py-10 lg:py-20 bg-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
@@ -596,7 +607,7 @@ const LandingPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials Section */}
       {/* <section className="py-20 bg-gradient-to-b from-primary-50 to-white">
@@ -766,17 +777,6 @@ const LandingPage = () => {
                     Call Now
                   </a>
                 </div>
-
-                {/* <div className="pt-8 flex flex-wrap justify-center gap-8 text-white/90">
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl">📧</span>
-                    <span className="font-para">pm.associates@hotmail.com</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl">📍</span>
-                    <span className="font-para">Mumbai • Delhi • Nagpur</span>
-                  </div>
-                </div> */}
               </div>
             </div>
           </AnimatedSection>

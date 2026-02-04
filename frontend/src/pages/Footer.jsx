@@ -1,18 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ca_logo from "../assets/ca-logo.svg";
+import class_co_1 from "../assets/class-co1.svg";
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (email) {
-      setIsSubscribed(true);
-      setEmail("");
-      setTimeout(() => setIsSubscribed(false), 3000);
-    }
-  };
 
   const quickLinks = [
     { name: "Home", path: "/" },
@@ -104,49 +94,16 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-black text-white">
-      {/* Newsletter Section */}
-      {/* <div className="bg-gradient-to-r from-primary-500 to-primary-700 py-12">
-        <div className="container mx-auto px-5 md:px-10 lg:px-20">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="text-center md:text-left">
-              <h3 className="text-2xl md:text-3xl font-bold mb-2 font-heading">
-                Stay Updated with Financial Insights
-              </h3>
-              <p className="text-white/90 font-para">
-                Subscribe to our newsletter for tax tips, compliance updates &
-                business advice
-              </p>
-            </div>
-            <form
-              onSubmit={handleSubscribe}
-              className="flex w-full md:w-auto gap-3"
-            >
-              <div className="relative flex-1 md:w-80">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
-                  className="w-full px-6 py-4 rounded-full text-gray-900 font-para focus:outline-none focus:ring-4 focus:ring-white/30"
-                  required
-                />
-                {isSubscribed && (
-                  <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg whitespace-nowrap">
-                    ✓ Subscribed Successfully!
-                  </div>
-                )}
-              </div>
-              <button
-                type="submit"
-                className="px-8 py-4 bg-white text-primary-700 font-bold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
+    <footer className="bg-gradient-to-b from-gray-900 to-black text-white relative overflow-hidden">
+      <div className="absolute inset-0 opacity-3 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <img
+            src={class_co_1}
+            alt="SMARTS & Co Background"
+            className="w-[600px] h-[600px] lg:w-[800px] lg:h-[800px] object-contain opacity-20 mix-blend-overlay"
+          />
         </div>
-      </div> */}
+      </div>
 
       {/* Main Footer Content */}
       <div className="py-16 border-b border-gray-800">
@@ -403,59 +360,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Office Locations */}
-      {/* <div className="py-12 bg-gray-900/50 border-b border-gray-800">
-        <div className="container mx-auto px-5 md:px-10 lg:px-20">
-          <h3 className="text-xl font-bold mb-8 text-center font-heading">
-            Our Office Locations
-          </h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {offices.map((office, index) => (
-              <div
-                key={index}
-                className="p-6 bg-gray-800/50 rounded-2xl border border-gray-700 hover:border-primary-500 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/20"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-primary-500/20 rounded-full flex items-center justify-center">
-                    <svg
-                      className="w-5 h-5 text-primary-500"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
-                  </div>
-                  <h4 className="text-lg font-bold font-heading">
-                    {office.city}
-                  </h4>
-                </div>
-                <p className="text-gray-400 text-sm mb-3 font-para">
-                  {office.address}
-                </p>
-                <a
-                  href={`tel:${office.phone}`}
-                  className="text-primary-500 hover:text-primary-400 text-sm font-para"
-                >
-                  {office.phone}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
 
       {/* Bottom Bar */}
       <div className="py-8 bg-black">

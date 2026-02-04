@@ -504,7 +504,7 @@ export const contactMethods = [
   {
     title: "Visit Us",
     info: "Mumbai Head Office",
-    subInfo: "Mon - Sat: 10:00 AM - 7:00 PM",
+    subInfo: "Mon - Sat: 10:00 AM - 06:30 PM",
     link: "#locations",
     icon: (
       <svg
