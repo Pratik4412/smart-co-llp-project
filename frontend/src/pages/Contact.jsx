@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AnimatedSection from "../components/AnimatedSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { contactMethods, faqs, offices, servicesC } from "../data/text";
+import { contactMethods, offices, servicesC } from "../data/text";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -65,13 +65,13 @@ const Contact = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <AnimatedSection animation="fade-down" duration={1000}>
-              <span className="px-5 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-5 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Get in Touch
               </span>
             </AnimatedSection>
 
             <AnimatedSection animation="fade-up" delay={200} duration={1000}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight font-heading">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight font-heading">
                 Let's Start a{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-700">
                   Conversation
@@ -327,7 +327,7 @@ const Contact = () => {
                         <p className="text-sm text-white/90 font-para">
                           Monday - Saturday
                           <br />
-                          10:00 AM - 6:30 PM IST
+                          9:30 AM to 7 PM IST
                         </p>
                       </div>
                     </div>
@@ -437,7 +437,7 @@ const Contact = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Our Offices
               </span>
             </AnimatedSection>
@@ -451,7 +451,7 @@ const Contact = () => {
             </AnimatedSection>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {offices.map((office, index) => (
               <AnimatedSection
                 key={index}
@@ -459,7 +459,7 @@ const Contact = () => {
                 delay={index * 100}
                 duration={1000}
               >
-                <div className="h-full p-4 bg-gradient-to-br from-primary-50 to-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-primary-100 hover:border-primary-400">
+                <div className="h-full p-8 bg-gradient-to-br from-primary-50 to-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-primary-100 hover:border-primary-400">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center text-white shadow-md">
                       <svg
@@ -561,7 +561,7 @@ const Contact = () => {
       </section>
 
       {/* FAQs */}
-      <section className="py-10 lg:py-20 bg-gradient-to-b from-primary-50 to-white">
+      {/* <section className="py-10 lg:py-20 bg-gradient-to-b from-primary-50 to-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
@@ -600,7 +600,7 @@ const Contact = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Map Section (Placeholder) */}
       {/* <section className="py-20 bg-white">

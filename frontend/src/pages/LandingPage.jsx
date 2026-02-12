@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import {
   coreValues,
+  credentials,
   industries,
   partners,
   processSteps,
@@ -95,16 +96,16 @@ const LandingPage = () => {
             {/* Left Content */}
             <div className="space-y-8">
               <AnimatedSection animation="fade-right" duration={1000}>
-                <div className="inline-flex items-center gap-2 px-5 py-3 bg-white rounded-full shadow-md border border-primary-200">
-                  <span className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></span>
-                  <span className="text-primary-700 text-base font-semibold">
+                <div className="inline-flex items-center gap-2 px-5 py-3 bg-white rounded-full shadow-md border border-secondary-200">
+                  <span className="w-2 h-2 bg-secondary-500 rounded-full animate-pulse"></span>
+                  <span className="text-secondary-700 text-base font-semibold">
                     Trusted Since 2005
                   </span>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fade-up" delay={200} duration={1000}>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight font-heading">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight font-heading">
                   Your Partner in{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 animate-gradient">
                     Financial Excellence
@@ -122,11 +123,12 @@ const LandingPage = () => {
 
               <AnimatedSection animation="fade-up" delay={600} duration={1000}>
                 <div className="flex flex-wrap gap-4">
-                  <Link
-                    to="/contact"
+                  <a
+                    href="https://drive.google.com/file/d/1IXI7qc8Uve2D9N6Kag-rpYvjhZ9T_iLu/view"
+                    target="_blank"
                     className="group px-8 font-heading py-4 bg-gradient-to-r from-primary-400 to-primary-600 text-white font-bold rounded-full hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 shadow-lg flex items-center gap-2"
                   >
-                    Get Consultation
+                    Download our E-brochure
                     <svg
                       className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
                       fill="none"
@@ -140,10 +142,10 @@ const LandingPage = () => {
                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                       />
                     </svg>
-                  </Link>
+                  </a>
                   <Link
                     to="/services"
-                    className="px-8 py-4 bg-white text-primary-700 font-heading font-bold rounded-full border-2 border-primary-400 hover:bg-primary-50 hover:border-primary-600 transition-all duration-300 shadow-md"
+                    className="px-8 py-4 bg-white text-secondary-700 font-heading font-bold rounded-full border-2 border-secondary-400 hover:bg-secondary-50 hover:border-secondary-600 transform hover:-translate-y-1 transition-all duration-300 shadow-md"
                   >
                     Explore Services
                   </Link>
@@ -232,7 +234,7 @@ const LandingPage = () => {
       </section>
 
       {/* Trust Badges Bar */}
-      <section className="py-8 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">
+      {/* <section className="py-8 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-white/90">
             <div className="text-center">
@@ -244,9 +246,9 @@ const LandingPage = () => {
             <div className="h-8 w-px bg-white/30"></div>
             <div className="text-center">
               <p className="text-xs uppercase tracking-wider mb-1">
-                FRN Number
+                ISO Certification
               </p>
-              <p className="text-lg font-bold">126763W</p>
+              <p className="text-lg font-bold">Certified & Peer Reviewed</p>
             </div>
             <div className="h-8 w-px bg-white/30"></div>
             <div className="text-center">
@@ -260,11 +262,32 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+      </section> */}
+      <section className="py-6 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">
+        <div className="container mx-auto px-5 md:px-10 lg:px-20">
+          <div className="flex flex-wrap justify-center items-center text-white gap-8 md:gap-16">
+            {credentials.map((cred, index) => (
+              <AnimatedSection
+                key={index}
+                animation="zoom-in"
+                delay={index * 100}
+                duration={800}
+              >
+                <div className="text-center">
+                  <p className="text-sm uppercase tracking-wider mb-1 opacity-90">
+                    {cred.label}
+                  </p>
+                  <p className="text-sm md:text-base font-bold">{cred.value}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
       </section>
       {/* About Section */}
       <section className="py-10 lg:py-20 bg-white relative overflow-hidden">
         {/* Background Logo Watermark */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-3 pointer-events-none">
+        <div className="absolute top-0 left-[10%] transform  opacity-3 pointer-events-none">
           <img
             src={class_co_1}
             alt="SMARTS & Co Background"
@@ -275,7 +298,7 @@ const LandingPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection animation="fade-right" duration={1000}>
               <div className="space-y-6">
-                <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg  lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+                <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg  lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                   About Us
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 font-heading">
@@ -346,7 +369,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Why Choose Us
               </span>
             </AnimatedSection>
@@ -360,7 +383,7 @@ const LandingPage = () => {
             </AnimatedSection>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full h-full">
             {whyChooseUs.map((item, index) => (
               <AnimatedSection
                 key={index}
@@ -368,7 +391,7 @@ const LandingPage = () => {
                 delay={index * 100}
                 duration={1000}
               >
-                <div className="group p-8 bg-gradient-to-br from-primary-50 to-white rounded-2xl border-2 border-primary-200 hover:border-primary-400 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center flex flex-col gap-2 justify-center items-center ">
+                <div className="group h-full p-4 bg-gradient-to-br from-primary-50 to-white rounded-2xl border-2 border-primary-200 hover:border-primary-400 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center flex flex-col gap-2 justify-center items-center ">
                   <div className="w-16 h-16 bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl flex items-center justify-center text-primary-600 transform group-hover:scale-110 transition-all duration-300 shadow-sm">
                     {item.icon}
                   </div>
@@ -390,7 +413,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Our Services
               </span>
             </AnimatedSection>
@@ -441,7 +464,7 @@ const LandingPage = () => {
 
                   <Link
                     to="/services"
-                    className="inline-flex font-heading items-center gap-2 text-primary-600 font-semibold hover:gap-4 transition-all duration-300"
+                    className="inline-flex font-heading items-center gap-2 text-secondary-600 font-semibold hover:gap-4 transition-all duration-300"
                   >
                     Learn More
                     <svg
@@ -470,7 +493,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Industries
               </span>
             </AnimatedSection>
@@ -514,7 +537,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Our Process
               </span>
             </AnimatedSection>
@@ -536,11 +559,11 @@ const LandingPage = () => {
                 delay={index * 150}
                 duration={1000}
               >
-                <div className="relative">
+                <div className="relative w-full h-full">
                   {index < processSteps.length - 1 && (
                     <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-primary-400 to-transparent"></div>
                   )}
-                  <div className="relative p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-primary-100 hover:border-primary-400">
+                  <div className="relative p-8 h-full bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-primary-100 hover:border-primary-400">
                     <div className="absolute -top-6 left-8 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
                       {step.step}
                     </div>
@@ -718,7 +741,7 @@ const LandingPage = () => {
       <section className="py-10 lg:py-20 bg-white">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <AnimatedSection animation="zoom-in" duration={1000}>
-            <div className="relative bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 rounded-3xl p-12 md:p-16 overflow-hidden shadow-2xl">
+            <div className="relative bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 rounded-3xl p-6 md:p-16 overflow-hidden shadow-2xl">
               {/* Animated Background */}
               <div className="absolute inset-0 opacity-20">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse"></div>
@@ -737,7 +760,7 @@ const LandingPage = () => {
                   and result-oriented professional services
                 </p>
 
-                <div className="flex flex-wrap justify-center gap-4 pt-6">
+                <div className="flex flex-wrap justify-center gap-4 lg:pt-6">
                   <Link
                     to="/contact"
                     className="group px-10 font-heading py-5 bg-white text-primary-700 font-bold text-lg rounded-full hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-2"
@@ -759,7 +782,7 @@ const LandingPage = () => {
                   </Link>
                   <a
                     href="tel:+919819082400"
-                    className="px-10 py-5 bg-white/10 font-heading backdrop-blur-sm text-white font-bold text-lg rounded-full border-2 border-white hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
+                    className="px-10 py-5 bg-transparent font-heading backdrop-blur-sm text-white hover:text-secondary-700 font-bold text-lg rounded-full border-2 border-secondary-400 hover:bg-secondary-50 hover:border-secondary-600 transform hover:-translate-y-1 transition-all duration-300  flex items-center gap-2 shadow-md group"
                   >
                     <svg
                       className="w-6 h-6"

@@ -165,7 +165,7 @@ export const services = [
 
 export const industries = [
   {
-    name: "Banking & Finance",
+    name: "BFSI",
     icon: (
       <svg
         className="w-8 h-8"
@@ -260,7 +260,7 @@ export const industries = [
     count: "60+",
   },
   {
-    name: "Retail & E-commerce",
+    name: "Retail",
     icon: (
       <svg
         className="w-8 h-8"
@@ -340,7 +340,7 @@ export const whyChooseUs = [
   },
   {
     title: "Pan-India Presence",
-    description: "Offices in Mumbai, Delhi, and Nagpur",
+    description: "Offices in Mumbai, Ahmedabad, Delhi, and Nagpur",
     icon: (
       <svg
         className="w-8 h-8"
@@ -538,7 +538,7 @@ export const offices = [
       "1202 , Lotus Arc One, New Link Road, Opp. Tanishq Showroom, Andheri West, Mumbai- 400013",
     phone: "+91 98190 82700",
     email: "pm.associates@hotmail.com",
-    timings: "Mon - Sat: 10:00 AM - 6:30 PM",
+    timings: "Mon - Sat: 9:30 AM to 7 PM",
   },
   {
     city: "Delhi",
@@ -547,7 +547,7 @@ export const offices = [
       "H.No. 102-103, 3rd floor, Pocket-8, Sector-23, Rohini PO, Rohini Sector-7 , DIST North West Delhi, Delhi - 110085",
     phone: "+91 98190 82700",
     email: "pm.associates@hotmail.com",
-    timings: "Mon - Sat: 10:00 AM - 6:30 PM",
+    timings: "Mon - Sat: 9:30 AM to 7 PM",
   },
   {
     city: "Nagpur",
@@ -556,7 +556,7 @@ export const offices = [
       "74, Samaj Ekta Society, Near Mausam Colony, Somalwada, Manish Nagar, Nagpur - 440005",
     phone: "+91 98190 82700",
     email: "pm.associates@hotmail.com",
-    timings: "Mon - Sat: 10:00 AM - 6:30 PM",
+    timings: "Mon - Sat: 9:30 AM to 7 PM",
   },
   {
     city: "Ahmedabad",
@@ -565,7 +565,7 @@ export const offices = [
       "A-332, Sumel 8, Ajit Mill Cross Road, Rakhial, Ahmedabad - 380023.",
     phone: "+91 98190 82700",
     email: "pm.associates@hotmail.com",
-    timings: "Mon - Sat: 10:00 AM - 6:30 PM",
+    timings: "Mon - Sat: 9:30 AM to 7 PM",
   },
 ];
 
@@ -581,28 +581,28 @@ export const servicesC = [
   "Other Services",
 ];
 
-export const faqs = [
-  // {
-  //   question: "What are your consultation charges?",
-  //   answer:
-  //     "We offer a free initial consultation to understand your requirements. Our service charges vary based on the scope and complexity of work.",
-  // },
-  {
-    question: "How quickly can you respond to urgent matters?",
-    answer:
-      "For existing clients, we aim to respond within 24 hours. For urgent matters, you can reach us directly via phone for immediate assistance.",
-  },
-  {
-    question: "Do you serve clients outside Mumbai?",
-    answer:
-      "Yes, we serve clients across India with offices in Mumbai, Delhi, and Nagpur. We also provide virtual consultation services.",
-  },
-  {
-    question: "What documents should I bring for consultation?",
-    answer:
-      "Depending on your requirement, we'll guide you on specific documents. Generally, bring relevant financial statements, tax records, and incorporation documents.",
-  },
-];
+// export const faqs = [
+//   // {
+//   //   question: "What are your consultation charges?",
+//   //   answer:
+//   //     "We offer a free initial consultation to understand your requirements. Our service charges vary based on the scope and complexity of work.",
+//   // },
+//   {
+//     question: "How quickly can you respond to urgent matters?",
+//     answer:
+//       "For existing clients, we aim to respond within 24 hours. For urgent matters, you can reach us directly via phone for immediate assistance.",
+//   },
+//   {
+//     question: "Do you serve clients outside Mumbai?",
+//     answer:
+//       "Yes, we serve clients across India with offices in Mumbai, Delhi, and Nagpur. We also provide virtual consultation services.",
+//   },
+//   {
+//     question: "What documents should I bring for consultation?",
+//     answer:
+//       "Depending on your requirement, we'll guide you on specific documents. Generally, bring relevant financial statements, tax records, and incorporation documents.",
+//   },
+// ];
 // contact page contetn end
 //services page contetn start
 export const categories = [
@@ -1530,9 +1530,9 @@ export const partnersAbout = [
 ];
 
 export const credentials = [
-  { label: "ICAI Registration", value: "FRN 126763W" },
-  { label: "PAN Number", value: "ABGFP5145E" },
-  { label: "GST Number", value: "27ABGFP5145E1Z9" },
+  { label: "Registered with", value: "ICAI" },
+  // { label: "PAN Number", value: "ABGFP5145E" },
+  // { label: "GST Number", value: "27ABGFP5145E1Z9" },
   { label: "ISO Certification", value: "Certified & Peer Reviewed" },
 ];
 

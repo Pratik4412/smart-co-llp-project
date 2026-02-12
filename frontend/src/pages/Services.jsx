@@ -266,7 +266,7 @@ const Services = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <AnimatedSection animation="fade-down" duration={1000}>
-              <span className="px-5 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-5 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Our Services
               </span>
             </AnimatedSection>
@@ -298,7 +298,7 @@ const Services = () => {
                 </Link>
                 <a
                   href="tel:+919819082400"
-                  className="px-8 py-4 bg-white text-primary-700 font-heading font-bold rounded-full border-2 border-primary-400 hover:bg-primary-50 transition-all duration-300"
+                  className="px-8 py-4 bg-white text-secondary-700 font-bold rounded-full border-2 border-secondary-400 hover:bg-secondary-50 transform hover:-translate-y-1 transition-all duration-300"
                 >
                   Call Now
                 </a>
@@ -347,7 +347,7 @@ const Services = () => {
                       <div className="w-16 h-16 bg-gradient-to-br from-primary-100 to-primary-50 rounded-xl flex items-center justify-center text-primary-600 transform group-hover:scale-110 transition-all duration-300 shadow-sm">
                         {getCategoryIcon(service.category)}
                       </div>
-                      <span className="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-bold rounded-full uppercase">
+                      <span className="px-3 py-1 bg-secondary-100 text-secondary-700 text-xs font-bold rounded-full uppercase">
                         {service.category}
                       </span>
                     </div>
@@ -564,7 +564,7 @@ const Services = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Specialized Services
               </span>
             </AnimatedSection>
@@ -620,7 +620,7 @@ const Services = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Our Approach
               </span>
             </AnimatedSection>
@@ -855,7 +855,7 @@ const Services = () => {
                   </Link>
                   <a
                     href="tel:+919819082400"
-                    className="group px-4 py-2 lg:px-10 lg:py-5 font-heading bg-white/10 backdrop-blur-sm text-white font-bold text-lg rounded-full border-2 border-white hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
+                     className="px-10 py-5 bg-transparent font-heading backdrop-blur-sm text-white hover:text-secondary-700 font-bold text-lg rounded-full border-2 border-secondary-400 hover:bg-secondary-50 hover:border-secondary-600 transform hover:-translate-y-1 transition-all duration-300  flex items-center gap-2 shadow-md group"
                   >
                     <svg
                       className="w-6 h-6"

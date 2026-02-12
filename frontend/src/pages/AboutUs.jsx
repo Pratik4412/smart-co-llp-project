@@ -39,13 +39,13 @@ const AboutUs = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <AnimatedSection animation="fade-down" duration={1000}>
-              <span className="px-5 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-5 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 About S M A R T S & Co. LLP
               </span>
             </AnimatedSection>
 
             <AnimatedSection animation="fade-up" delay={200} duration={1000}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight font-heading">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight font-heading">
                 Building Trust Through{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-700">
                   Excellence & Integrity
@@ -71,7 +71,7 @@ const AboutUs = () => {
                 </Link>
                 <Link
                   to="/services"
-                  className="px-8 py-4 bg-white text-primary-700 font-bold rounded-full border-2 border-primary-400 hover:bg-primary-50 transition-all duration-300"
+                  className="px-8 py-4 bg-white text-secondary-700 font-bold rounded-full border-2 border-secondary-400 hover:bg-secondary-50 transform hover:-translate-y-1 transition-all duration-300"
                 >
                   Our Services
                 </Link>
@@ -84,7 +84,7 @@ const AboutUs = () => {
       {/* Trust Bar */}
       <section className="py-6 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-white">
+          <div className="flex items-center justify-center gap-10 text-white">
             {credentials.map((cred, index) => (
               <AnimatedSection
                 key={index}
@@ -93,7 +93,7 @@ const AboutUs = () => {
                 duration={800}
               >
                 <div className="text-center">
-                  <p className="text-xs uppercase tracking-wider mb-1 opacity-90">
+                  <p className="text-sm uppercase tracking-wider mb-1 opacity-90">
                     {cred.label}
                   </p>
                   <p className="text-sm md:text-base font-bold">{cred.value}</p>
@@ -110,7 +110,7 @@ const AboutUs = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection animation="fade-right" duration={1000}>
               <div className="space-y-6">
-                <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+                <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                   Our Story
                 </span>
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 font-heading">
@@ -174,7 +174,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Vision & Mission
               </span>
             </AnimatedSection>
@@ -258,7 +258,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Core Values
               </span>
             </AnimatedSection>
@@ -303,7 +303,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Our Journey
               </span>
             </AnimatedSection>
@@ -319,7 +319,7 @@ const AboutUs = () => {
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary-400 to-primary-600"></div>
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-secondary-400 to-secondary-600"></div>
 
             <div className="space-y-12">
               {timeline.map((item, index) => (
@@ -359,7 +359,7 @@ const AboutUs = () => {
 
                     {/* Center Dot */}
                     <div className="hidden md:block relative z-10">
-                      <div className="w-6 h-6 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full border-4 border-white shadow-lg transform hover:scale-150 transition-transform duration-300"></div>
+                      <div className="w-6 h-6 bg-gradient-to-br from-secondary-400 to-secondary-600 rounded-full border-4 border-white shadow-lg transform hover:scale-150 transition-transform duration-300"></div>
                     </div>
 
                     <div className="flex-1 hidden md:block"></div>
@@ -376,7 +376,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Why Choose Us
               </span>
             </AnimatedSection>
@@ -414,26 +414,27 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="container mx-auto flex flex-col md:flex-row gap-10 py-10 lg:py-20">
+      <section className="container mx-auto flex flex-col md:flex-row gap-8 md:gap-0 py-10 lg:py-20">
         <div className="w-full flex items-center justify-center">
           <img
             src={mittal}
             alt="mittal image"
-            className="rounded-full w-[200px] lg:w-[400px] h-full "
+            className="rounded-full w-[200px] lg:w-[250px] "
           />
         </div>
-        <div className="w-full flex flex-col gap-3 px-5 md:px-10 ">
-          <h2 className="text-xl md:text-2xl font-bold text-gray-900 font-heading">
-            Chairman Emeritus –{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-700">
+        <div className="w-full flex flex-col gap-3 px-5 md:px-0 ">
+          <h2 className="text-xl font-bold text-gray-900 font-heading">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-700 text-xl md:text-2xl ">
               CA. Prashant Mittal
-            </span>
+            </span>{" "}
+            <br />
+            Chairman Emeritus
           </h2>
           <p className="text-text-primary font-para leading-relaxed text-base lg:text-lg">
             CA. Prashant Mittal is the guiding force and institutional backbone
-            of S M A R T S & Co. LLP. Qualifying as a Chartered Accountant at the age
-            of 19, he laid the foundation for a career defined by discipline,
-            foresight, and ethical leadership.
+            of S M A R T S & Co. LLP. Qualifying as a Chartered Accountant at
+            the age of 19, he laid the foundation for a career defined by
+            discipline, foresight, and ethical leadership.
           </p>
           <p className="text-text-primary font-para leading-relaxed text-base lg:text-lg">
             With over two decades of experience, he has advised businesses
@@ -455,7 +456,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
           <div className="text-center mb-16 space-y-4">
             <AnimatedSection animation="fade-up" duration={1000}>
-              <span className="px-4 py-2 bg-primary-100 text-primary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
+              <span className="px-4 py-2 bg-secondary-100 text-secondary-700 text-lg lg:text-2xl font-bold uppercase tracking-wider rounded-full">
                 Our Leadership
               </span>
             </AnimatedSection>
@@ -568,7 +569,7 @@ const AboutUs = () => {
                   </Link>
                   <a
                     href="tel:+919819082400"
-                    className="px-10 py-5 bg-white/10 backdrop-blur-sm font-heading text-white font-bold text-lg rounded-full border-2 border-white hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
+                    className="px-10 py-5 bg-transparent font-heading backdrop-blur-sm text-white hover:text-secondary-700 font-bold text-lg rounded-full border-2 border-secondary-400 hover:bg-secondary-50 hover:border-secondary-600 transform hover:-translate-y-1 transition-all duration-300  flex items-center gap-2 shadow-md group"
                   >
                     <svg
                       className="w-6 h-6"
